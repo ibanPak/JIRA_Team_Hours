@@ -1,0 +1,750 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="TestModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <!--Errors Found During Generation:
+warning 6013: The table/view 'Test.dbo.ALLFILENAMES' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="ALLFILENAMES">
+          <Property Name="WHICHPATH" Type="varchar" MaxLength="255" />
+          <Property Name="WHICHFILE" Type="varchar" MaxLength="255" />
+        </EntityType>-->
+        <!--Errors Found During Generation:
+warning 6013: The table/view 'Test.dbo.ASC_List' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="ASC_List">
+          <Property Name="st_abbr" Type="varchar" MaxLength="50" />
+          <Property Name="lic_number" Type="varchar" MaxLength="50" />
+          <Property Name="lname" Type="varchar" MaxLength="50" />
+          <Property Name="fname" Type="varchar" MaxLength="50" />
+          <Property Name="mname" Type="varchar" MaxLength="50" />
+          <Property Name="name_suffix" Type="varchar" MaxLength="50" />
+          <Property Name="street" Type="varchar" MaxLength="250" />
+          <Property Name="city" Type="varchar" MaxLength="50" />
+          <Property Name="state" Type="varchar" MaxLength="50" />
+          <Property Name="zip" Type="varchar" MaxLength="50" />
+          <Property Name="company" Type="varchar" MaxLength="50" />
+          <Property Name="phone" Type="varchar" MaxLength="100" />
+          <Property Name="county" Type="varchar" MaxLength="50" />
+          <Property Name="county_code" Type="varchar" MaxLength="50" />
+          <Property Name="status" Type="varchar" MaxLength="50" />
+          <Property Name="lic_type" Type="varchar" MaxLength="50" />
+          <Property Name="exp_date" Type="varchar" MaxLength="50" />
+          <Property Name="eff_date" Type="varchar" MaxLength="50" />
+          <Property Name="issue_date" Type="varchar" MaxLength="50" />
+          <Property Name="aqb_compliant" Type="varchar" MaxLength="50" />
+          <Property Name="discipline_action" Type="varchar" MaxLength="50" />
+          <Property Name="discipline_start_date" Type="varchar" MaxLength="50" />
+          <Property Name="discipline_end_date" Type="varchar" MaxLength="50" />
+          <Property Name="Column 23" Type="varchar" MaxLength="50" />
+          <Property Name="Column 24" Type="varchar" MaxLength="50" />
+          <Property Name="Column 25" Type="varchar" MaxLength="50" />
+          <Property Name="Column 26" Type="varchar" MaxLength="50" />
+          <Property Name="Column 27" Type="varchar" MaxLength="50" />
+          <Property Name="Column 28" Type="varchar" MaxLength="50" />
+          <Property Name="Column 29" Type="varchar" MaxLength="50" />
+        </EntityType>-->
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'Test.dbo.EventCodes' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'Test.dbo.EventCodes_DOC' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'Test.dbo.EventCodesUAT' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <!--Errors Found During Generation:
+warning 6013: The table/view 'Test.dbo.JIRA_JSON' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="JIRA_JSON">
+          <Property Name="ResponseLength" Type="int" />
+          <Property Name="Response" Type="varchar(max)" />
+          <Property Name="Error" Type="varchar(max)" />
+          <Property Name="Header" Type="varchar(max)" />
+          <Property Name="Body" Type="varchar(max)" />
+          <Property Name="ResponseHeader" Type="varchar(max)" />
+        </EntityType>-->
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'Test.dbo.JIRA_Team' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="JIRA_Team">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Username" Type="varchar" MaxLength="50" />
+          <Property Name="DisplayName" Type="varchar" MaxLength="50" />
+          <Property Name="Group" Type="varchar" MaxLength="50" />
+          <Property Name="ActiveSprint" Type="int" />
+          <Property Name="BurntHours" Type="float" />
+          <Property Name="RemainingHours" Type="float" />
+          <Property Name="DtLastModified" Type="datetime" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6013: The table/view 'Test.dbo.MercuryMapEvents' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="MercuryMapEvents">
+          <Property Name="Status" Type="nvarchar" MaxLength="255" />
+          <Property Name="ID" Type="float" />
+          <Property Name="Title" Type="nvarchar" MaxLength="255" />
+          <Property Name="Inbound to AMC" Type="nvarchar" MaxLength="255" />
+          <Property Name="Outbound to Mercury" Type="nvarchar" MaxLength="255" />
+          <Property Name="Description" Type="nvarchar(max)" />
+          <Property Name="RESNET Action Required" Type="nvarchar(max)" />
+        </EntityType>-->
+        <!--Errors Found During Generation:
+warning 6013: The table/view 'Test.dbo.MySQL_Offers' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="MySQL_Offers">
+          <Property Name="loan_no" Type="float" />
+          <Property Name="res_id" Type="float" />
+          <Property Name="offer_type" Type="nvarchar" MaxLength="255" />
+          <Property Name="offer_type_no" Type="float" />
+          <Property Name="status" Type="nvarchar" MaxLength="255" />
+          <Property Name="offer_date" Type="datetime" />
+          <Property Name="buyers_name" Type="nvarchar" MaxLength="255" />
+          <Property Name="offer_price" Type="float" />
+          <Property Name="earnest_deposit" Type="float" />
+          <Property Name="loan_type" Type="nvarchar" MaxLength="255" />
+          <Property Name="loan_amount" Type="float" />
+          <Property Name="closing_cost" Type="float" />
+          <Property Name="closing_dt" Type="datetime" />
+          <Property Name="buyer_type" Type="nvarchar" MaxLength="255" />
+        </EntityType>-->
+        <!--Errors Found During Generation:
+warning 6013: The table/view 'Test.dbo.NS_FileUpload' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="NS_FileUpload">
+          <Property Name="OriginalFileName" Type="nvarchar" MaxLength="255" />
+          <Property Name="NewFileName" Type="nvarchar" MaxLength="255" />
+          <Property Name="LoanNo" Type="nvarchar" MaxLength="25" />
+          <Property Name="SequenceNo" Type="nvarchar" MaxLength="50" />
+        </EntityType>-->
+        <!--Errors Found During Generation:
+warning 6013: The table/view 'Test.dbo.NS_logs' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="NS_logs">
+          <Property Name="SourceName" Type="nvarchar" MaxLength="255" />
+          <Property Name="TimeStamp" Type="nvarchar" MaxLength="25" />
+          <Property Name="LoanNo" Type="nvarchar" MaxLength="25" />
+          <Property Name="FileName" Type="nvarchar" MaxLength="255" />
+          <Property Name="Result" Type="nvarchar" MaxLength="255" />
+          <Property Name="Status" Type="nvarchar" MaxLength="25" />
+        </EntityType>-->
+        <!--Errors Found During Generation:
+warning 6013: The table/view 'Test.dbo.NS_Offers' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="NS_Offers">
+          <Property Name="Property Basics - Loan Number" Type="float" />
+          <Property Name="Property Basics - RES ID" Type="float" />
+          <Property Name="Property Offers - Offer Type" Type="nvarchar" MaxLength="255" />
+          <Property Name="Property Offers - Offer Sequence Number" Type="float" />
+          <Property Name="Property Offers - Offer Status" Type="nvarchar" MaxLength="255" />
+          <Property Name="Property Offers - Offer Accepted" Type="nvarchar" MaxLength="255" />
+          <Property Name="Property Offers - offer_date" Type="datetime" />
+          <Property Name="Property Offers - Buyers Name" Type="nvarchar" MaxLength="255" />
+          <Property Name="Property Offers - Offer Price" Type="float" />
+          <Property Name="Property Offers - Earnest Deposit" Type="float" />
+          <Property Name="Property Offers - Loan Type" Type="nvarchar" MaxLength="255" />
+          <Property Name="Property Offers - Loan Amount" Type="float" />
+          <Property Name="Property Offers - Closing Costs" Type="float" />
+          <Property Name="Property Offers - Repairs" Type="nvarchar" MaxLength="255" />
+          <Property Name="Property Offers - Home Warranty" Type="nvarchar" MaxLength="255" />
+          <Property Name="Property Offers - Inspection Fee" Type="nvarchar" MaxLength="255" />
+          <Property Name="Property Offers - Survey Fee" Type="nvarchar" MaxLength="255" />
+          <Property Name="Property Offers - Termite Fee" Type="nvarchar" MaxLength="255" />
+          <Property Name="Property Offers - General Comments" Type="nvarchar" MaxLength="255" />
+          <Property Name="Property Offers - Days To Close" Type="nvarchar" MaxLength="255" />
+          <Property Name="Property Offers - Offer Close Date" Type="datetime" />
+          <Property Name="Property Offers - Inspection Days" Type="datetime" />
+          <Property Name="Property Offers - Other Costs" Type="datetime" />
+          <Property Name="Property Offers - Other Costs Description" Type="datetime" />
+          <Property Name="Property Offers - PerDiem" Type="datetime" />
+          <Property Name="Property Offers - BuyerTypeCode" Type="datetime" />
+          <Property Name="Property Offers - BuyerType" Type="nvarchar" MaxLength="255" />
+          <Property Name="Property Offers - Seller Costs" Type="nvarchar" MaxLength="255" />
+          <Property Name="Property Offers - Taxes" Type="nvarchar" MaxLength="255" />
+        </EntityType>-->
+        <!--Errors Found During Generation:
+warning 6013: The table/view 'Test.dbo.NS_OffersImport' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="NS_OffersImport">
+          <Property Name="loan_no" Type="float" />
+          <Property Name="res_id" Type="float" />
+          <Property Name="offer_type" Type="nvarchar" MaxLength="255" />
+          <Property Name="offer_type_no" Type="float" />
+          <Property Name="status" Type="nvarchar" MaxLength="255" />
+          <Property Name="offer_date" Type="datetime" />
+          <Property Name="buyers_name" Type="nvarchar" MaxLength="255" />
+          <Property Name="offer_price" Type="float" />
+          <Property Name="earnest_deposit" Type="float" />
+          <Property Name="loan_type" Type="nvarchar" MaxLength="255" />
+          <Property Name="loan_amount" Type="float" />
+          <Property Name="closing_cost" Type="float" />
+          <Property Name="closing_dt" Type="datetime" />
+          <Property Name="buyer_type" Type="nvarchar" MaxLength="255" />
+        </EntityType>-->
+        <!--Errors Found During Generation:
+warning 6013: The table/view 'Test.dbo.NS_Prod_Imp' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="NS_Prod_Imp">
+          <Property Name="Property_Id" Type="float" />
+          <Property Name="usr_file_name" Type="nvarchar" MaxLength="255" />
+          <Property Name="TaskID" Type="float" />
+        </EntityType>-->
+        <!--Errors Found During Generation:
+warning 6013: The table/view 'Test.dbo.NS_Prod_Imp_Two' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="NS_Prod_Imp_Two">
+          <Property Name="OriginalSource" Type="nvarchar" MaxLength="255" />
+          <Property Name="FileName" Type="nvarchar" MaxLength="255" />
+          <Property Name="Status" Type="nvarchar" MaxLength="50" />
+          <Property Name="Message" Type="nvarchar" MaxLength="50" />
+          <Property Name="LoanNo" Type="nvarchar" MaxLength="50" />
+          <Property Name="TimeStamp" Type="nvarchar" MaxLength="50" />
+        </EntityType>-->
+        <!--Errors Found During Generation:
+warning 6013: The table/view 'Test.dbo.NS_Property' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="NS_Property">
+          <Property Name="1-Address" Type="nvarchar" MaxLength="255" />
+          <Property Name="2-City" Type="nvarchar" MaxLength="255" />
+          <Property Name="3-State" Type="nvarchar" MaxLength="255" />
+          <Property Name="4-Zip" Type="float" />
+          <Property Name="5-Loan" Type="float" />
+          <Property Name="6-Borrowerfirst" Type="nvarchar" MaxLength="255" />
+          <Property Name="7-Borrwerlast" Type="nvarchar" MaxLength="255" />
+          <Property Name="8-propertytype" Type="nvarchar" MaxLength="255" />
+          <Property Name="9-clientid" Type="nvarchar" MaxLength="255" />
+          <Property Name="10-am_id" Type="nvarchar" MaxLength="255" />
+          <Property Name="11-unpaid balance" Type="float" />
+          <Property Name="12-list date" Type="datetime" />
+          <Property Name="13-list price" Type="float" />
+          <Property Name="14-listingexpdate" Type="nvarchar" MaxLength="255" />
+          <Property Name="15-occupancy" Type="nvarchar" MaxLength="255" />
+          <Property Name="16-sales price" Type="nvarchar" MaxLength="255" />
+          <Property Name="17-projectedclosedt" Type="nvarchar" MaxLength="255" />
+          <Property Name="18-notetable-1" Type="nvarchar" MaxLength="255" />
+          <Property Name="19-note-1" Type="nvarchar" MaxLength="255" />
+          <Property Name="20-notetable-2" Type="nvarchar" MaxLength="255" />
+          <Property Name="21-note-2" Type="nvarchar" MaxLength="255" />
+          <Property Name="22-notetable-3" Type="nvarchar" MaxLength="255" />
+          <Property Name="23-note-3" Type="nvarchar" MaxLength="255" />
+          <Property Name="24-agentid" Type="nvarchar" MaxLength="255" />
+          <Property Name="25-bpoorddate" Type="nvarchar" MaxLength="255" />
+          <Property Name="26-bporecvdate" Type="datetime" />
+          <Property Name="27-bpovalue" Type="float" />
+          <Property Name="28-aprorddate" Type="nvarchar" MaxLength="255" />
+          <Property Name="29-aprrecvdate" Type="datetime" />
+          <Property Name="30-aprvalue" Type="float" />
+          <Property Name="31-evictordereddate" Type="datetime" />
+          <Property Name="32-evictdonedate" Type="datetime" />
+          <Property Name="33-RedemptionStartDt" Type="nvarchar" MaxLength="255" />
+          <Property Name="34-RedmpExpDt" Type="datetime" />
+          <Property Name="35-closedate" Type="nvarchar" MaxLength="255" />
+          <Property Name="36-settlenettoclient" Type="nvarchar" MaxLength="255" />
+          <Property Name="37-titleorddate" Type="nvarchar" MaxLength="255" />
+          <Property Name="38-titlecleardate" Type="nvarchar" MaxLength="255" />
+          <Property Name="39-am2_id" Type="nvarchar" MaxLength="255" />
+          <Property Name="40-portfolio" Type="float" />
+          <Property Name="41-fmv" Type="nvarchar" MaxLength="255" />
+          <Property Name="42-FcSaleDt" Type="datetime" />
+          <Property Name="43-MiCompany" Type="nvarchar" MaxLength="255" />
+          <Property Name="44-MiCert" Type="nvarchar" MaxLength="255" />
+          <Property Name="45-MiType" Type="nvarchar" MaxLength="255" />
+          <Property Name="46-notetable-4" Type="nvarchar" MaxLength="255" />
+          <Property Name="47-note-4" Type="nvarchar" MaxLength="255" />
+          <Property Name="48-notetable-5" Type="nvarchar" MaxLength="255" />
+          <Property Name="49-note-5" Type="nvarchar" MaxLength="255" />
+          <Property Name="53-FC AttnyID" Type="nvarchar" MaxLength="255" />
+          <Property Name="54-Contract Dt" Type="nvarchar" MaxLength="255" />
+          <Property Name="55-Vacant Dt" Type="datetime" />
+          <Property Name="56-Occupied Dt" Type="nvarchar" MaxLength="255" />
+          <Property Name="57-FC Start Dt" Type="nvarchar" MaxLength="255" />
+          <Property Name="58-Servicer Name" Type="nvarchar" MaxLength="255" />
+        </EntityType>-->
+        <!--Errors Found During Generation:
+warning 6013: The table/view 'Test.dbo.NS_PropertyExt' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="NS_PropertyExt">
+          <Property Name="Property Basics - Loan Number" Type="float" />
+          <Property Name="Property Basics - ResID" Type="float" />
+          <Property Name="Property Basics - Reporting ResID" Type="float" />
+          <Property Name="PropertyOccupancy - Redemption - Shortened Redemption Date" Type="nvarchar" MaxLength="255" />
+          <Property Name="UnitEvict - Unit1 - Evict - Eviction Ordered Date" Type="datetime" />
+          <Property Name="UnitEvict - Unit1 - Evict - Estimated Evict Compelete Date" Type="nvarchar" MaxLength="255" />
+          <Property Name="UnitEvict - Unit1 - Evict - Complete Date" Type="datetime" />
+          <Property Name="FcInsur - Loan - Paid in Full Date" Type="datetime" />
+          <Property Name="FcInsur - MortgageInsurance - Certificate Number" Type="nvarchar" MaxLength="255" />
+          <Property Name="FcInsur - MortgageInsurance - MI Claim Received Date" Type="nvarchar" MaxLength="255" />
+          <Property Name="PreM - PropertyData - Winterize Requested Date" Type="datetime" />
+          <Property Name="TitleStatus - Title FC Deed Vesting" Type="nvarchar" MaxLength="255" />
+          <Property Name="TitleStatus - Title FC Deed Recorded" Type="datetime" />
+          <Property Name="Settlement - Cash to Seller" Type="nvarchar" MaxLength="255" />
+          <Property Name="HUD Approved Ext Due Dt " Type="nvarchar" MaxLength="255" />
+          <Property Name="Dt HUD Apvd Appraisal Ext" Type="nvarchar" MaxLength="255" />
+          <Property Name="Hazard Claim Date NEED TO BUILD STILL" Type="nvarchar" MaxLength="255" />
+          <Property Name="Hazard Claim Description  NEED TO BUILD STILL" Type="nvarchar" MaxLength="255" />
+          <Property Name="Hazard Claim Recovered Amount  NEED TO BUILD STILL" Type="nvarchar" MaxLength="255" />
+          <Property Name="ValuationComparisions - Other BPO 3 Date" Type="datetime" />
+          <Property Name="ValuationComparisions - Other BPO 3 Value" Type="nvarchar" MaxLength="255" />
+          <Property Name="ValuationComparisions - Other BPO 3 Repaired" Type="nvarchar" MaxLength="255" />
+          <Property Name="ValuationComparisions - Other BPO 3 Cost To Cure" Type="nvarchar" MaxLength="255" />
+          <Property Name="ValuationComparisions - Other BPO 3 Condtion" Type="nvarchar" MaxLength="255" />
+          <Property Name="ValuationComparisions - Other BPO 4 Date" Type="datetime" />
+          <Property Name="ValuationComparisions - Other BPO 4 Value" Type="nvarchar" MaxLength="255" />
+          <Property Name="ValuationComparisions - Other BPO 4 Repaired" Type="nvarchar" MaxLength="255" />
+          <Property Name="ValuationComparisions - Other BPO 4 Cost To Cure" Type="nvarchar" MaxLength="255" />
+          <Property Name="ValuationComparisions - Other BPO 4 Condition" Type="nvarchar" MaxLength="255" />
+          <Property Name="ValuationComparisions - Other BPO 5 Date" Type="datetime" />
+          <Property Name="ValuationComparisions - Other BPO 5 Value" Type="nvarchar" MaxLength="255" />
+          <Property Name="ValuationComparisions - Other BPO 5 Repaired" Type="nvarchar" MaxLength="255" />
+          <Property Name="ValuationComparisions - Other BPO 5 Cost To Cure" Type="nvarchar" MaxLength="255" />
+          <Property Name="ValuationComparisions - Other BPO 5 Condition" Type="nvarchar" MaxLength="255" />
+          <Property Name="ValuationComparisions - Other APR 3 Date" Type="datetime" />
+          <Property Name="ValuationComparisions - Other APR 3 Value" Type="float" />
+          <Property Name="ValuationComparisions - Other APR 3 Repaired" Type="nvarchar" MaxLength="255" />
+          <Property Name="ValuationComparisions - Other APR 3 Cost To Cure" Type="nvarchar" MaxLength="255" />
+          <Property Name="ValuationComparisions - Other APR 3 Condition" Type="nvarchar" MaxLength="255" />
+          <Property Name="ValuationComparisions - Other APR 4 Date" Type="datetime" />
+          <Property Name="ValuationComparisions - Other APR 4 Value" Type="nvarchar" MaxLength="255" />
+          <Property Name="ValuationComparisions - Other APR 4 Repaired" Type="nvarchar" MaxLength="255" />
+          <Property Name="ValuationComparisions - Other APR 4 Cost To Cure" Type="nvarchar" MaxLength="255" />
+          <Property Name="ValuationComparisions - Other APR 4 Condition" Type="nvarchar" MaxLength="255" />
+          <Property Name="ValuationComparisions - Other APR 5 Date" Type="datetime" />
+          <Property Name="ValuationComparisions - Other APR 5 Value" Type="nvarchar" MaxLength="255" />
+          <Property Name="ValuationComparisions - Other APR 5 Repaired" Type="nvarchar" MaxLength="255" />
+          <Property Name="ValuationComparisions - Other APR 5 Cost To Cure" Type="nvarchar" MaxLength="255" />
+          <Property Name="ValuationComparisions - Other APR 5 Condition" Type="nvarchar" MaxLength="255" />
+          <Property Name="ValuationComparisions - Other Drive By Ordered Date" Type="datetime" />
+          <Property Name="ValuationComparisions - Other DriveBy Date" Type="datetime" />
+          <Property Name="ValuationComparisions - Other DriveBy Value" Type="float" />
+          <Property Name="Appraisal Update Date" Type="datetime" />
+          <Property Name="Appraisal Update Value" Type="float" />
+        </EntityType>-->
+        <!--Errors Found During Generation:
+warning 6013: The table/view 'Test.dbo.PCHazardClaim' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="PCHazardClaim">
+          <Property Name="OrgRefID" Type="varchar" MaxLength="50" />
+          <Property Name="VendorRefID" Type="varchar" MaxLength="50" />
+          <Property Name="PropertyRefID" Type="varchar" MaxLength="50" />
+          <Property Name="HazardClaimRefID" Type="varchar" MaxLength="50" />
+          <Property Name="AmtPaid" Type="money" />
+          <Property Name="ClaimInformation" Type="nvarchar" MaxLength="255" />
+          <Property Name="ClaimProceeds" Type="money" />
+          <Property Name="DamageDescription" Type="nvarchar" MaxLength="255" />
+          <Property Name="DamagedBy" Type="nvarchar" MaxLength="255" />
+          <Property Name="DateofDecision" Type="date" />
+          <Property Name="DateofLoss" Type="date" />
+          <Property Name="DateClaimwasFiled" Type="date" />
+          <Property Name="DispersementType" Type="nvarchar" MaxLength="255" />
+          <Property Name="DueDate" Type="date" />
+          <Property Name="ExpirationDate" Type="date" />
+          <Property Name="FollowUpDate" Type="date" />
+          <Property Name="HazardClaimStatus" Type="nvarchar" MaxLength="255" />
+          <Property Name="HazardClaimStatusDate" Type="date" />
+          <Property Name="HazardClaimsRepresentative" Type="nvarchar" MaxLength="255" />
+          <Property Name="InsuranceCo" Type="nvarchar" MaxLength="255" />
+          <Property Name="Payee" Type="nvarchar" MaxLength="255" />
+          <Property Name="PolicyNumber" Type="nvarchar" MaxLength="255" />
+          <Property Name="PremiumAmt" Type="money" />
+          <Property Name="ProceedsReceived" Type="date" />
+        </EntityType>-->
+        <!--Errors Found During Generation:
+warning 6013: The table/view 'Test.dbo.PCHazardClaim_Import' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="PCHazardClaim_Import">
+          <Property Name="OrgRefID" Type="varchar" MaxLength="50" />
+          <Property Name="VendorRefID" Type="varchar" MaxLength="50" />
+          <Property Name="PropertyRefID" Type="varchar" MaxLength="50" />
+          <Property Name="HazardClaimRefID" Type="varchar" MaxLength="50" />
+          <Property Name="AmtPaid" Type="money" />
+          <Property Name="ClaimInformation" Type="nvarchar" MaxLength="255" />
+          <Property Name="ClaimProceeds" Type="money" />
+          <Property Name="DamageDescription" Type="nvarchar" MaxLength="255" />
+          <Property Name="DamagedBy" Type="nvarchar" MaxLength="255" />
+          <Property Name="DateofDecision" Type="date" />
+          <Property Name="DateofLoss" Type="date" />
+          <Property Name="DateClaimwasFiled" Type="date" />
+          <Property Name="DispersementType" Type="nvarchar" MaxLength="255" />
+          <Property Name="DueDate" Type="date" />
+          <Property Name="ExpirationDate" Type="date" />
+          <Property Name="FollowUpDate" Type="date" />
+          <Property Name="HazardClaimStatus" Type="nvarchar" MaxLength="255" />
+          <Property Name="HazardClaimStatusDate" Type="date" />
+          <Property Name="HazardClaimsRepresentative" Type="nvarchar" MaxLength="255" />
+          <Property Name="InsuranceCo" Type="nvarchar" MaxLength="255" />
+          <Property Name="Payee" Type="nvarchar" MaxLength="255" />
+          <Property Name="PolicyNumber" Type="nvarchar" MaxLength="255" />
+          <Property Name="PremiumAmt" Type="money" />
+          <Property Name="ProceedsReceived" Type="date" />
+        </EntityType>-->
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'Test.dbo.PCProperty' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'Test.dbo.PCProperty_Import' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <!--Errors Found During Generation:
+warning 6013: The table/view 'Test.dbo.PCViolation' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="PCViolation">
+          <Property Name="OrgRefID" Type="nvarchar" MaxLength="255" />
+          <Property Name="VendorRefID" Type="nvarchar" MaxLength="255" />
+          <Property Name="PropertyRefID" Type="nvarchar" MaxLength="255" />
+          <Property Name="ViolationRefID" Type="nvarchar" MaxLength="255" />
+          <Property Name="AttorneyAddress" Type="nvarchar" MaxLength="255" />
+          <Property Name="AttorneyCity" Type="nvarchar" MaxLength="255" />
+          <Property Name="AttorneyEmail" Type="nvarchar" MaxLength="255" />
+          <Property Name="AttorneyFax" Type="float" />
+          <Property Name="AttorneyName" Type="nvarchar" MaxLength="255" />
+          <Property Name="AttorneyOfficeName" Type="nvarchar" MaxLength="255" />
+          <Property Name="AttorneyPhone" Type="float" />
+          <Property Name="AttorneyState" Type="nvarchar" MaxLength="255" />
+          <Property Name="AttorneyZip" Type="float" />
+          <Property Name="ChargeOffEscalated" Type="date" />
+          <Property Name="ClaimFiled" Type="date" />
+          <Property Name="ComplianceContactName" Type="nvarchar" MaxLength="255" />
+          <Property Name="ComplianceContactTitle" Type="nvarchar" MaxLength="255" />
+          <Property Name="ComplianceEntity" Type="nvarchar" MaxLength="255" />
+          <Property Name="ComplianceContactEmail" Type="nvarchar" MaxLength="255" />
+          <Property Name="ComplianceContactFax" Type="float" />
+          <Property Name="ComplianceContactPhone" Type="float" />
+          <Property Name="CurrentFines" Type="float" />
+          <Property Name="DailyFines" Type="float" />
+          <Property Name="EscalationFormCompleted" Type="date" />
+          <Property Name="FNMAServError" Type="nvarchar" MaxLength="255" />
+          <Property Name="FollowUpDate" Type="date" />
+          <Property Name="FormsSubmitted" Type="date" />
+          <Property Name="Forms" Type="nvarchar" MaxLength="255" />
+          <Property Name="GoalDate" Type="date" />
+          <Property Name="HearingData" Type="nvarchar" MaxLength="255" />
+          <Property Name="HearingDate" Type="date" />
+          <Property Name="Notification" Type="nvarchar" MaxLength="255" />
+          <Property Name="PackagetoFNMA" Type="date" />
+          <Property Name="Recommendation" Type="nvarchar" MaxLength="255" />
+          <Property Name="ResponsibleforViolation" Type="nvarchar" MaxLength="255" />
+          <Property Name="ServicerRecdViolation" Type="date" />
+          <Property Name="SummaryRecommendation" Type="nvarchar" MaxLength="255" />
+          <Property Name="ViolationPosted" Type="date" />
+          <Property Name="ViolationStatus" Type="nvarchar" MaxLength="255" />
+          <Property Name="ViolationStatusDate" Type="date" />
+          <Property Name="ViolationType" Type="nvarchar" MaxLength="255" />
+          <Property Name="ViolationsRepresentative" Type="nvarchar" MaxLength="255" />
+        </EntityType>-->
+        <!--Errors Found During Generation:
+warning 6013: The table/view 'Test.dbo.RefreshTokenz' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="RefreshTokenz">
+          <Property Name="Id" Type="nvarchar" MaxLength="128" />
+          <Property Name="Subject" Type="nvarchar" MaxLength="100" />
+          <Property Name="ClientId" Type="nvarchar" MaxLength="100" />
+          <Property Name="IssuedUtc" Type="datetime" />
+          <Property Name="ExpiresUtc" Type="datetime" />
+          <Property Name="ProtectedTicket" Type="nvarchar(max)" />
+          <Property Name="DtLastModified" Type="datetime" />
+        </EntityType>-->
+        <!--Errors Found During Generation:
+warning 6013: The table/view 'Test.dbo.SeleniumIDE' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="SeleniumIDE">
+          <Property Name="RawData" Type="varchar(max)" />
+          <Property Name="SeleniumMethod" Type="varchar(max)" />
+        </EntityType>-->
+        <!--Errors Found During Generation:
+warning 6013: The table/view 'Test.dbo.ZZZMySQL_Offers' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="ZZZMySQL_Offers">
+          <Property Name="loan_no" Type="float" />
+          <Property Name="res_id" Type="float" />
+          <Property Name="offer_type" Type="nvarchar" MaxLength="255" />
+          <Property Name="offer_type_no" Type="float" />
+          <Property Name="status" Type="nvarchar" MaxLength="255" />
+          <Property Name="offer_date" Type="datetime" />
+          <Property Name="buyers_name" Type="nvarchar" MaxLength="255" />
+          <Property Name="offer_price" Type="float" />
+          <Property Name="earnest_deposit" Type="float" />
+          <Property Name="loan_type" Type="nvarchar" MaxLength="255" />
+          <Property Name="loan_amount" Type="float" />
+          <Property Name="closing_cost" Type="float" />
+          <Property Name="closing_dt" Type="datetime" />
+          <Property Name="buyer_type" Type="nvarchar" MaxLength="255" />
+        </EntityType>-->
+        <!--Errors Found During Generation:
+warning 6013: The table/view 'Test.dbo.ZZZNS_OffersImport' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="ZZZNS_OffersImport">
+          <Property Name="loan_no" Type="float" />
+          <Property Name="res_id" Type="float" />
+          <Property Name="offer_type" Type="nvarchar" MaxLength="255" />
+          <Property Name="offer_type_no" Type="float" />
+          <Property Name="status" Type="nvarchar" MaxLength="255" />
+          <Property Name="offer_date" Type="datetime" />
+          <Property Name="buyers_name" Type="nvarchar" MaxLength="255" />
+          <Property Name="offer_price" Type="float" />
+          <Property Name="earnest_deposit" Type="float" />
+          <Property Name="loan_type" Type="nvarchar" MaxLength="255" />
+          <Property Name="loan_amount" Type="float" />
+          <Property Name="closing_cost" Type="float" />
+          <Property Name="closing_dt" Type="datetime" />
+          <Property Name="buyer_type" Type="nvarchar" MaxLength="255" />
+        </EntityType>-->
+        <Function Name="BulkInsertPCProperty" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="EventCodesTest" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="EventCodesTestQA" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="EventCodesTestUAT" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="fn_FormatMinutes" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" ReturnType="varchar">
+          <Parameter Name="minutes" Type="bigint" Mode="In" />
+        </Function>
+        <Function Name="HttpRequest" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="url" Type="varchar(max)" Mode="In" />
+          <Parameter Name="headers" Type="varchar(max)" Mode="In" />
+          <Parameter Name="response" Type="varchar(max)" Mode="InOut" />
+          <Parameter Name="responseHeaders" Type="varchar(max)" Mode="InOut" />
+          <Parameter Name="errorResponse" Type="varchar(max)" Mode="InOut" />
+          <Parameter Name="cookie" Type="varchar(max)" Mode="InOut" />
+          <Parameter Name="connectTimeout" Type="int" Mode="In" />
+          <Parameter Name="outputResponse" Type="bit" Mode="In" />
+          <Parameter Name="httpMethod" Type="varchar" Mode="In" />
+          <Parameter Name="requestBody" Type="varchar(max)" Mode="In" />
+        </Function>
+        <Function Name="JiraMySprintHours" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="sprint" Type="int" Mode="In" />
+          <Parameter Name="user" Type="varchar" Mode="In" />
+        </Function>
+        <Function Name="JiraTeamSprintHours" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="JSONEscaped" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" ReturnType="nvarchar(max)">
+          <Parameter Name="Unescaped" Type="nvarchar(max)" Mode="In" />
+        </Function>
+        <Function Name="parseJSON" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="JSON" Type="nvarchar(max)" Mode="In" />
+          <ReturnType>
+            <CollectionType>
+              <RowType>
+                <Property Name="element_id" Type="int" Nullable="false" />
+                <Property Name="sequenceNo" Type="int" />
+                <Property Name="parent_ID" Type="int" />
+                <Property Name="Object_ID" Type="int" />
+                <Property Name="NAME" Type="nvarchar" MaxLength="2000" />
+                <Property Name="StringValue" Type="nvarchar(max)" Nullable="false" />
+                <Property Name="ValueType" Type="varchar" MaxLength="10" Nullable="false" />
+              </RowType>
+            </CollectionType>
+          </ReturnType>
+        </Function>
+        <Function Name="SeleniumMethodConvert" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="SplitString" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="s" Type="nvarchar(max)" Mode="In" />
+          <Parameter Name="sep" Type="varchar" Mode="In" />
+          <ReturnType>
+            <CollectionType>
+              <RowType>
+                <Property Name="val" Type="varchar(max)" />
+              </RowType>
+            </CollectionType>
+          </ReturnType>
+        </Function>
+        <Function Name="ToJSON" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" ReturnType="nvarchar(max)" />
+        <Function Name="ToXML" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" ReturnType="nvarchar(max)" />
+        <EntityContainer Name="TestModelStoreContainer">
+          <EntitySet Name="JIRA_Team" EntityType="Self.JIRA_Team" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [JIRA_Team].[Id] AS [Id], 
+    [JIRA_Team].[Username] AS [Username], 
+    [JIRA_Team].[DisplayName] AS [DisplayName], 
+    [JIRA_Team].[Group] AS [Group], 
+    [JIRA_Team].[ActiveSprint] AS [ActiveSprint], 
+    [JIRA_Team].[BurntHours] AS [BurntHours], 
+    [JIRA_Team].[RemainingHours] AS [RemainingHours], 
+    [JIRA_Team].[DtLastModified] AS [DtLastModified]
+    FROM [dbo].[JIRA_Team] AS [JIRA_Team]</DefiningQuery>
+          </EntitySet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="TestModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <ComplexType Name="parseJSON_Result">
+          <Property Name="element_id" Type="Int32" Nullable="false" />
+          <Property Name="sequenceNo" Type="Int32" />
+          <Property Name="parent_ID" Type="Int32" />
+          <Property Name="Object_ID" Type="Int32" />
+          <Property Name="NAME" Type="String" MaxLength="2000" FixedLength="false" Unicode="true" />
+          <Property Name="StringValue" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="ValueType" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+        </ComplexType>
+        <ComplexType Name="SplitString_Result">
+          <Property Name="val" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+        </ComplexType>
+        <EntityType Name="JIRA_Team">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Username" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="DisplayName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Group" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="ActiveSprint" Type="Int32" />
+          <Property Name="BurntHours" Type="Double" />
+          <Property Name="RemainingHours" Type="Double" />
+          <Property Name="DtLastModified" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityContainer Name="TestEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="JIRA_Team" EntityType="Self.JIRA_Team" />
+          <FunctionImport Name="parseJSON" IsComposable="true" ReturnType="Collection(TestModel.parseJSON_Result)">
+            <Parameter Name="JSON" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="SplitString" IsComposable="true" ReturnType="Collection(TestModel.SplitString_Result)">
+            <Parameter Name="s" Mode="In" Type="String" />
+            <Parameter Name="sep" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="BulkInsertPCProperty" />
+          <FunctionImport Name="EventCodesTest" ReturnType="Collection(TestModel.EventCodesTest_Result)" />
+          <FunctionImport Name="EventCodesTestQA" ReturnType="Collection(TestModel.EventCodesTestQA_Result)" />
+          <FunctionImport Name="EventCodesTestUAT" ReturnType="Collection(TestModel.EventCodesTestUAT_Result)" />
+          <FunctionImport Name="HttpRequest" ReturnType="Collection(TestModel.HttpRequest_Result)">
+            <Parameter Name="url" Mode="In" Type="String" />
+            <Parameter Name="headers" Mode="In" Type="String" />
+            <Parameter Name="response" Mode="InOut" Type="String" />
+            <Parameter Name="responseHeaders" Mode="InOut" Type="String" />
+            <Parameter Name="errorResponse" Mode="InOut" Type="String" />
+            <Parameter Name="cookie" Mode="InOut" Type="String" />
+            <Parameter Name="connectTimeout" Mode="In" Type="Int32" />
+            <Parameter Name="outputResponse" Mode="In" Type="Boolean" />
+            <Parameter Name="httpMethod" Mode="In" Type="String" />
+            <Parameter Name="requestBody" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="JiraMySprintHours" ReturnType="Collection(TestModel.JiraMySprintHours_Result)">
+            <Parameter Name="sprint" Mode="In" Type="Int32" />
+            <Parameter Name="user" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="JiraTeamSprintHours" ReturnType="Collection(String)" />
+          <FunctionImport Name="SeleniumMethodConvert" ReturnType="Collection(TestModel.SeleniumMethodConvert_Result)" />
+        </EntityContainer>
+        <ComplexType Name="EventCodesTest_Result">
+          <Property Type="Int32" Name="indx" Nullable="false" />
+          <Property Type="String" Name="headerKey" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="value" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="EventCodesTestQA_Result">
+          <Property Type="Int32" Name="indx" Nullable="false" />
+          <Property Type="String" Name="headerKey" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="value" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="EventCodesTestUAT_Result">
+          <Property Type="Int32" Name="indx" Nullable="false" />
+          <Property Type="String" Name="headerKey" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="value" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="HttpRequest_Result">
+          <Property Type="Int32" Name="indx" Nullable="false" />
+          <Property Type="String" Name="headerKey" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="value" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="JiraMySprintHours_Result">
+          <Property Type="Int32" Name="indx" Nullable="false" />
+          <Property Type="String" Name="headerKey" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="value" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="SeleniumMethodConvert_Result">
+          <Property Type="String" Name="RawData" Nullable="true" />
+          <Property Type="String" Name="SeleniumMethod" Nullable="true" />
+        </ComplexType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="TestModelStoreContainer" CdmEntityContainer="TestEntities">
+          <EntitySetMapping Name="JIRA_Team">
+            <EntityTypeMapping TypeName="TestModel.JIRA_Team">
+              <MappingFragment StoreEntitySet="JIRA_Team">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Username" ColumnName="Username" />
+                <ScalarProperty Name="DisplayName" ColumnName="DisplayName" />
+                <ScalarProperty Name="Group" ColumnName="Group" />
+                <ScalarProperty Name="ActiveSprint" ColumnName="ActiveSprint" />
+                <ScalarProperty Name="BurntHours" ColumnName="BurntHours" />
+                <ScalarProperty Name="RemainingHours" ColumnName="RemainingHours" />
+                <ScalarProperty Name="DtLastModified" ColumnName="DtLastModified" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <FunctionImportMapping FunctionName="TestModel.Store.parseJSON" FunctionImportName="parseJSON">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="TestModel.parseJSON_Result">
+                <ScalarProperty Name="element_id" ColumnName="element_id" />
+                <ScalarProperty Name="sequenceNo" ColumnName="sequenceNo" />
+                <ScalarProperty Name="parent_ID" ColumnName="parent_ID" />
+                <ScalarProperty Name="Object_ID" ColumnName="Object_ID" />
+                <ScalarProperty Name="NAME" ColumnName="NAME" />
+                <ScalarProperty Name="StringValue" ColumnName="StringValue" />
+                <ScalarProperty Name="ValueType" ColumnName="ValueType" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionName="TestModel.Store.SplitString" FunctionImportName="SplitString">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="TestModel.SplitString_Result">
+                <ScalarProperty Name="val" ColumnName="val" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="BulkInsertPCProperty" FunctionName="TestModel.Store.BulkInsertPCProperty" />
+          <FunctionImportMapping FunctionImportName="EventCodesTest" FunctionName="TestModel.Store.EventCodesTest">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="TestModel.EventCodesTest_Result">
+                <ScalarProperty Name="indx" ColumnName="indx" />
+                <ScalarProperty Name="headerKey" ColumnName="headerKey" />
+                <ScalarProperty Name="value" ColumnName="value" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="EventCodesTestQA" FunctionName="TestModel.Store.EventCodesTestQA">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="TestModel.EventCodesTestQA_Result">
+                <ScalarProperty Name="indx" ColumnName="indx" />
+                <ScalarProperty Name="headerKey" ColumnName="headerKey" />
+                <ScalarProperty Name="value" ColumnName="value" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="EventCodesTestUAT" FunctionName="TestModel.Store.EventCodesTestUAT">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="TestModel.EventCodesTestUAT_Result">
+                <ScalarProperty Name="indx" ColumnName="indx" />
+                <ScalarProperty Name="headerKey" ColumnName="headerKey" />
+                <ScalarProperty Name="value" ColumnName="value" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="HttpRequest" FunctionName="TestModel.Store.HttpRequest">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="TestModel.HttpRequest_Result">
+                <ScalarProperty Name="indx" ColumnName="indx" />
+                <ScalarProperty Name="headerKey" ColumnName="headerKey" />
+                <ScalarProperty Name="value" ColumnName="value" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="JiraMySprintHours" FunctionName="TestModel.Store.JiraMySprintHours">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="TestModel.JiraMySprintHours_Result">
+                <ScalarProperty Name="indx" ColumnName="indx" />
+                <ScalarProperty Name="headerKey" ColumnName="headerKey" />
+                <ScalarProperty Name="value" ColumnName="value" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="JiraTeamSprintHours" FunctionName="TestModel.Store.JiraTeamSprintHours" />
+          <FunctionImportMapping FunctionImportName="SeleniumMethodConvert" FunctionName="TestModel.Store.SeleniumMethodConvert">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="TestModel.SeleniumMethodConvert_Result">
+                <ScalarProperty Name="RawData" ColumnName="RawData" />
+                <ScalarProperty Name="SeleniumMethod" ColumnName="SeleniumMethod" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
