@@ -87,3 +87,92 @@ C:\Users\ivan.nguyen\source\repos\JIRA Team Hours\JIRA Team Hours\obj\Debug\JIRA
 C:\Users\ivan.nguyen\source\repos\JIRA Team Hours\JIRA Team Hours\obj\Debug\JIRA_Team_Hours.csproj.CoreCompileInputs.cache
 C:\Users\ivan.nguyen\source\repos\JIRA Team Hours\JIRA Team Hours\obj\Debug\JIRA Team Hours.dll
 C:\Users\ivan.nguyen\source\repos\JIRA Team Hours\JIRA Team Hours\obj\Debug\JIRA Team Hours.pdb
+C:\Users\ivan.nguyen\source\repos\JIRA_Team_Hours2\JIRA Team Hours\bin\ApplicationInsights.config
+C:\Users\ivan.nguyen\source\repos\JIRA_Team_Hours2\JIRA Team Hours\bin\roslyn\csc.exe
+C:\Users\ivan.nguyen\source\repos\JIRA_Team_Hours2\JIRA Team Hours\bin\roslyn\csc.exe.config
+C:\Users\ivan.nguyen\source\repos\JIRA_Team_Hours2\JIRA Team Hours\bin\roslyn\csc.rsp
+C:\Users\ivan.nguyen\source\repos\JIRA_Team_Hours2\JIRA Team Hours\bin\roslyn\csi.exe
+C:\Users\ivan.nguyen\source\repos\JIRA_Team_Hours2\JIRA Team Hours\bin\roslyn\csi.exe.config
+C:\Users\ivan.nguyen\source\repos\JIRA_Team_Hours2\JIRA Team Hours\bin\roslyn\csi.rsp
+C:\Users\ivan.nguyen\source\repos\JIRA_Team_Hours2\JIRA Team Hours\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\ivan.nguyen\source\repos\JIRA_Team_Hours2\JIRA Team Hours\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\ivan.nguyen\source\repos\JIRA_Team_Hours2\JIRA Team Hours\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\ivan.nguyen\source\repos\JIRA_Team_Hours2\JIRA Team Hours\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\ivan.nguyen\source\repos\JIRA_Team_Hours2\JIRA Team Hours\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\ivan.nguyen\source\repos\JIRA_Team_Hours2\JIRA Team Hours\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\ivan.nguyen\source\repos\JIRA_Team_Hours2\JIRA Team Hours\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\ivan.nguyen\source\repos\JIRA_Team_Hours2\JIRA Team Hours\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\ivan.nguyen\source\repos\JIRA_Team_Hours2\JIRA Team Hours\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\ivan.nguyen\source\repos\JIRA_Team_Hours2\JIRA Team Hours\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\ivan.nguyen\source\repos\JIRA_Team_Hours2\JIRA Team Hours\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\ivan.nguyen\source\repos\JIRA_Team_Hours2\JIRA Team Hours\bin\roslyn\System.AppContext.dll
+C:\Users\ivan.nguyen\source\repos\JIRA_Team_Hours2\JIRA Team Hours\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\ivan.nguyen\source\repos\JIRA_Team_Hours2\JIRA Team Hours\bin\roslyn\System.Console.dll
+C:\Users\ivan.nguyen\source\repos\JIRA_Team_Hours2\JIRA Team Hours\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\ivan.nguyen\source\repos\JIRA_Team_Hours2\JIRA Team Hours\bin\roslyn\System.Diagnostics.Process.dll
+C:\Users\ivan.nguyen\source\repos\JIRA_Team_Hours2\JIRA Team Hours\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\ivan.nguyen\source\repos\JIRA_Team_Hours2\JIRA Team Hours\bin\roslyn\System.IO.Compression.dll
+C:\Users\ivan.nguyen\source\repos\JIRA_Team_Hours2\JIRA Team Hours\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\ivan.nguyen\source\repos\JIRA_Team_Hours2\JIRA Team Hours\bin\roslyn\System.IO.FileSystem.DriveInfo.dll
+C:\Users\ivan.nguyen\source\repos\JIRA_Team_Hours2\JIRA Team Hours\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\ivan.nguyen\source\repos\JIRA_Team_Hours2\JIRA Team Hours\bin\roslyn\System.IO.Pipes.dll
+C:\Users\ivan.nguyen\source\repos\JIRA_Team_Hours2\JIRA Team Hours\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\ivan.nguyen\source\repos\JIRA_Team_Hours2\JIRA Team Hours\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\ivan.nguyen\source\repos\JIRA_Team_Hours2\JIRA Team Hours\bin\roslyn\System.Security.Claims.dll
+C:\Users\ivan.nguyen\source\repos\JIRA_Team_Hours2\JIRA Team Hours\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\ivan.nguyen\source\repos\JIRA_Team_Hours2\JIRA Team Hours\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\ivan.nguyen\source\repos\JIRA_Team_Hours2\JIRA Team Hours\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\ivan.nguyen\source\repos\JIRA_Team_Hours2\JIRA Team Hours\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\ivan.nguyen\source\repos\JIRA_Team_Hours2\JIRA Team Hours\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\ivan.nguyen\source\repos\JIRA_Team_Hours2\JIRA Team Hours\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\ivan.nguyen\source\repos\JIRA_Team_Hours2\JIRA Team Hours\bin\roslyn\System.Threading.Thread.dll
+C:\Users\ivan.nguyen\source\repos\JIRA_Team_Hours2\JIRA Team Hours\bin\roslyn\System.ValueTuple.dll
+C:\Users\ivan.nguyen\source\repos\JIRA_Team_Hours2\JIRA Team Hours\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\ivan.nguyen\source\repos\JIRA_Team_Hours2\JIRA Team Hours\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\ivan.nguyen\source\repos\JIRA_Team_Hours2\JIRA Team Hours\bin\roslyn\System.Xml.XPath.dll
+C:\Users\ivan.nguyen\source\repos\JIRA_Team_Hours2\JIRA Team Hours\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\ivan.nguyen\source\repos\JIRA_Team_Hours2\JIRA Team Hours\bin\roslyn\vbc.exe
+C:\Users\ivan.nguyen\source\repos\JIRA_Team_Hours2\JIRA Team Hours\bin\roslyn\vbc.exe.config
+C:\Users\ivan.nguyen\source\repos\JIRA_Team_Hours2\JIRA Team Hours\bin\roslyn\vbc.rsp
+C:\Users\ivan.nguyen\source\repos\JIRA_Team_Hours2\JIRA Team Hours\bin\roslyn\VBCSCompiler.exe
+C:\Users\ivan.nguyen\source\repos\JIRA_Team_Hours2\JIRA Team Hours\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\ivan.nguyen\source\repos\JIRA_Team_Hours2\JIRA Team Hours\bin\JIRA Team Hours.dll.config
+C:\Users\ivan.nguyen\source\repos\JIRA_Team_Hours2\JIRA Team Hours\bin\JIRA Team Hours.dll
+C:\Users\ivan.nguyen\source\repos\JIRA_Team_Hours2\JIRA Team Hours\bin\JIRA Team Hours.pdb
+C:\Users\ivan.nguyen\source\repos\JIRA_Team_Hours2\JIRA Team Hours\bin\Antlr3.Runtime.dll
+C:\Users\ivan.nguyen\source\repos\JIRA_Team_Hours2\JIRA Team Hours\bin\AspNet.ScriptManager.bootstrap.dll
+C:\Users\ivan.nguyen\source\repos\JIRA_Team_Hours2\JIRA Team Hours\bin\AspNet.ScriptManager.jQuery.dll
+C:\Users\ivan.nguyen\source\repos\JIRA_Team_Hours2\JIRA Team Hours\bin\EntityFramework.dll
+C:\Users\ivan.nguyen\source\repos\JIRA_Team_Hours2\JIRA Team Hours\bin\EntityFramework.SqlServer.dll
+C:\Users\ivan.nguyen\source\repos\JIRA_Team_Hours2\JIRA Team Hours\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\ivan.nguyen\source\repos\JIRA_Team_Hours2\JIRA Team Hours\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\ivan.nguyen\source\repos\JIRA_Team_Hours2\JIRA Team Hours\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\ivan.nguyen\source\repos\JIRA_Team_Hours2\JIRA Team Hours\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\ivan.nguyen\source\repos\JIRA_Team_Hours2\JIRA Team Hours\bin\Microsoft.AI.Web.dll
+C:\Users\ivan.nguyen\source\repos\JIRA_Team_Hours2\JIRA Team Hours\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\ivan.nguyen\source\repos\JIRA_Team_Hours2\JIRA Team Hours\bin\Microsoft.ApplicationInsights.dll
+C:\Users\ivan.nguyen\source\repos\JIRA_Team_Hours2\JIRA Team Hours\bin\Microsoft.AspNet.FriendlyUrls.dll
+C:\Users\ivan.nguyen\source\repos\JIRA_Team_Hours2\JIRA Team Hours\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+C:\Users\ivan.nguyen\source\repos\JIRA_Team_Hours2\JIRA Team Hours\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\ivan.nguyen\source\repos\JIRA_Team_Hours2\JIRA Team Hours\bin\Microsoft.ScriptManager.MSAjax.dll
+C:\Users\ivan.nguyen\source\repos\JIRA_Team_Hours2\JIRA Team Hours\bin\Microsoft.ScriptManager.WebForms.dll
+C:\Users\ivan.nguyen\source\repos\JIRA_Team_Hours2\JIRA Team Hours\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\ivan.nguyen\source\repos\JIRA_Team_Hours2\JIRA Team Hours\bin\Newtonsoft.Json.dll
+C:\Users\ivan.nguyen\source\repos\JIRA_Team_Hours2\JIRA Team Hours\bin\System.Web.Optimization.dll
+C:\Users\ivan.nguyen\source\repos\JIRA_Team_Hours2\JIRA Team Hours\bin\WebGrease.dll
+C:\Users\ivan.nguyen\source\repos\JIRA_Team_Hours2\JIRA Team Hours\bin\EntityFramework.xml
+C:\Users\ivan.nguyen\source\repos\JIRA_Team_Hours2\JIRA Team Hours\bin\EntityFramework.SqlServer.xml
+C:\Users\ivan.nguyen\source\repos\JIRA_Team_Hours2\JIRA Team Hours\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\ivan.nguyen\source\repos\JIRA_Team_Hours2\JIRA Team Hours\bin\System.Web.Optimization.xml
+C:\Users\ivan.nguyen\source\repos\JIRA_Team_Hours2\JIRA Team Hours\bin\Antlr3.Runtime.pdb
+C:\Users\ivan.nguyen\source\repos\JIRA_Team_Hours2\JIRA Team Hours\bin\Microsoft.AspNet.FriendlyUrls.xml
+C:\Users\ivan.nguyen\source\repos\JIRA_Team_Hours2\JIRA Team Hours\bin\Newtonsoft.Json.xml
+C:\Users\ivan.nguyen\source\repos\JIRA_Team_Hours2\JIRA Team Hours\bin\Microsoft.ApplicationInsights.xml
+C:\Users\ivan.nguyen\source\repos\JIRA_Team_Hours2\JIRA Team Hours\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\ivan.nguyen\source\repos\JIRA_Team_Hours2\JIRA Team Hours\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\ivan.nguyen\source\repos\JIRA_Team_Hours2\JIRA Team Hours\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\ivan.nguyen\source\repos\JIRA_Team_Hours2\JIRA Team Hours\bin\Microsoft.AI.Web.xml
+C:\Users\ivan.nguyen\source\repos\JIRA_Team_Hours2\JIRA Team Hours\obj\Debug\JIRA_Team_Hours.csprojResolveAssemblyReference.cache
+C:\Users\ivan.nguyen\source\repos\JIRA_Team_Hours2\JIRA Team Hours\obj\Debug\JIRA_Team_Hours.csproj.CoreCompileInputs.cache
+C:\Users\ivan.nguyen\source\repos\JIRA_Team_Hours2\JIRA Team Hours\obj\Debug\JIRA Team Hours.dll
+C:\Users\ivan.nguyen\source\repos\JIRA_Team_Hours2\JIRA Team Hours\obj\Debug\JIRA Team Hours.pdb

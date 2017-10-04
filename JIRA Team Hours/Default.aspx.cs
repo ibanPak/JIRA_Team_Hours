@@ -39,34 +39,38 @@ namespace JIRA_Team_Hours
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            var db = new TestEntities();
-            var userlist = db.Database.SqlQuery<KeyValue>("select cast(username as varchar(100)) as [Key], cast(Id as varchar(50)) as Value from jira_team (nolock)").ToList();
-            var sprintlist = db.Database.SqlQuery<KeyValue>("select cast(Sprint as varchar(100)) as [Key] , cast(Id as varchar(50)) as Value from [JIRASprint] (nolock)").ToList();
-
-            var users = new List<ListItem>();
-            foreach (var u in userlist)
+            if (!this.IsPostBack)
             {
-                users.Add(new ListItem { Text = u.Key, Value = u.Value });
-            }
-            DdlUser.DataSource = users;
-            DdlUser.DataTextField = "Text";
-            DdlUser.DataValueField = "Value";
-            DdlUser.DataBind();
+                var db = new TestEntities();
+                var userlist = db.Database.SqlQuery<KeyValue>("select cast(username as varchar(100)) as [Key], cast(Id as varchar(50)) as Value from jira_team (nolock)").ToList();
+                var sprintlist = db.Database.SqlQuery<KeyValue>("select cast(Sprint as varchar(100)) as [Key] , cast(Id as varchar(50)) as Value from [JIRASprint] (nolock)").ToList();
 
-            var sprints = new List<ListItem>();
-            foreach (var s in sprintlist)
-            {
-                sprints.Add(new ListItem { Text = s.Key, Value = s.Value });
+                var users = new List<ListItem>();
+                foreach (var u in userlist)
+                {
+                    users.Add(new ListItem { Text = u.Key, Value = u.Value });
+                }
+                DdlUser.DataSource = users;
+                //DdlUser.DataTextField = "Text";
+                //DdlUser.DataValueField = "Value";
+                DdlUser.DataBind();
+
+                var sprints = new List<ListItem>();
+                foreach (var s in sprintlist)
+                {
+                    sprints.Add(new ListItem { Text = s.Key, Value = s.Value });
+                }
+                DdlSprint.DataSource = sprints;
+                DdlSprint.DataBind();
             }
-            DdlSprint.DataSource = sprints;
-            DdlSprint.DataBind();
+            
         }
 
         protected void Button1_Click(object sender, EventArgs e)
         {
             var db = new TestEntities();
             db.Database.CommandTimeout = 400;
-            var val = db.Database.SqlQuery<SpValue>("EXEC [dbo].[JiraMySprintHours]"+DdlSprint.SelectedItem+ ", 'ivan.nguyen'").FirstOrDefault();
+            var val = db.Database.SqlQuery<SpValue>("EXEC [dbo].[JiraMySprintHours]"+DdlSprint.SelectedItem+ ","+"'"+DdlUser.SelectedItem+"'").FirstOrDefault();
             Burnt.Text = val.TotalHoursBurnt.ToString();
             Remaining.Text = val.TotalHoursRemaining.ToString();
 
