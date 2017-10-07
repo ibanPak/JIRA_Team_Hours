@@ -14,6 +14,7 @@
         <asp:DropDownList ID="DdlUser" runat="server" Width="250px">
         </asp:DropDownList>
         &nbsp;<br />
+                    <br />
                     Hours Burnt
                 </td>
                 <td style="width: 340px">
@@ -22,6 +23,7 @@
         <asp:DropDownList ID="DdlSprint" runat="server" Width="250px">
         </asp:DropDownList>
         &nbsp;<br />
+                    <br />
                     Hours Remaining
                 </td>
             </tr>
@@ -41,15 +43,9 @@
             </tr>
         </table>
         <br />
-       <asp:Button ID="Button1" runat="server" onclick="Button1_Click" Text="Click">
+       <asp:Button ID="Button1" runat="server" onclick="Button1_Click" Text="Submit">
        </asp:Button>
         <br />
-        <table>
-            <asp:Label ID="Response1"
-                Text="Response:"
-                runat="server">
-            </asp:Label>
-        </table>
 
 </div>
 

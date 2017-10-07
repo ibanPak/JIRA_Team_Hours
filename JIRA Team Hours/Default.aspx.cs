@@ -88,15 +88,15 @@ namespace JIRA_Team_Hours
             var db = new TestEntities();
             db.Database.CommandTimeout = 400;
             var val = db.Database.SqlQuery<SpValue>("EXEC [dbo].[JiraMySprintHours]"+DdlSprint.SelectedItem+ ","+"'"+DdlUser.SelectedItem+"'").FirstOrDefault();
-            //Burnt.Text = val.TotalHoursBurnt.ToString();
-            //Remaining.Text = val.TotalHoursRemaining.ToString();
              
             var val2 = db.Database.SqlQuery<SpValue>("select response from dbo.JIRA_JSON (nolock)").FirstOrDefault();
-            
-            //Response1.Text = val2.Response.ToString();
-            var issues = JObject.Parse(val2.Response)["issues"];
-            Burnt.Text = ((from i in issues select (float)i["fields"]["timespent"]).Sum()/3600).ToString();
-            Remaining.Text = ((from i in issues select (float)i["fields"]["timeestimate"]).Sum()/3600).ToString();
+
+            var obj = val2.Response.Replace("timespent\":null","timespent\":0");
+ 
+
+            var issues = JObject.Parse(obj)["issues"];
+            Burnt.Text = "Total: "+((from i in issues select (float)i["fields"]["timespent"]).Sum()/3600).ToString("n2");
+            Remaining.Text = "Total: " + ((from i in issues select (float)i["fields"]["timeestimate"]).Sum()/3600).ToString("n2");
         }
 
     }
