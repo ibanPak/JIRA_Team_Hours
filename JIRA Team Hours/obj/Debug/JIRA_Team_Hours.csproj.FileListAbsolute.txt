@@ -176,3 +176,7 @@ C:\Users\ivan.nguyen\source\repos\JIRA_Team_Hours2\JIRA Team Hours\obj\Debug\JIR
 C:\Users\ivan.nguyen\source\repos\JIRA_Team_Hours2\JIRA Team Hours\obj\Debug\JIRA_Team_Hours.csproj.CoreCompileInputs.cache
 C:\Users\ivan.nguyen\source\repos\JIRA_Team_Hours2\JIRA Team Hours\obj\Debug\JIRA Team Hours.dll
 C:\Users\ivan.nguyen\source\repos\JIRA_Team_Hours2\JIRA Team Hours\obj\Debug\JIRA Team Hours.pdb
+C:\Users\ivan.nguyen\source\repos\JIRA_Team_Hours2\JIRA Team Hours\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+C:\Users\ivan.nguyen\source\repos\JIRA_Team_Hours2\JIRA Team Hours\bin\System.Diagnostics.DiagnosticSource.dll
+C:\Users\ivan.nguyen\source\repos\JIRA_Team_Hours2\JIRA Team Hours\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+C:\Users\ivan.nguyen\source\repos\JIRA_Team_Hours2\JIRA Team Hours\bin\System.Diagnostics.DiagnosticSource.xml

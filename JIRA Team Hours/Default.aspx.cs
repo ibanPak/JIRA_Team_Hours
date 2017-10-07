@@ -5,6 +5,13 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using JIRA_Team_Hours;
+using Newtonsoft.Json.Converters;
+using Newtonsoft;
+using Newtonsoft.Json;
+using static JIRA_Team_Hours.Class1;
+using System.IO;
+using Newtonsoft.Json.Linq;
+using System.Web.Script.Serialization;
 
 namespace JIRA_Team_Hours
 {
@@ -32,6 +39,12 @@ namespace JIRA_Team_Hours
         {
             get; set;
         }
+
+        public string Response
+        {
+            get; set;
+        }
+
     }
 
 
@@ -51,8 +64,6 @@ namespace JIRA_Team_Hours
                     users.Add(new ListItem { Text = u.Key, Value = u.Value });
                 }
                 DdlUser.DataSource = users;
-                //DdlUser.DataTextField = "Text";
-                //DdlUser.DataValueField = "Value";
                 DdlUser.DataBind();
 
                 var sprints = new List<ListItem>();
@@ -66,16 +77,28 @@ namespace JIRA_Team_Hours
             
         }
 
+        public static T DeserializeObject<T>(string jsonObj)
+        {
+            return JsonConvert.DeserializeObject<T>(jsonObj,
+                new JsonSerializerSettings() { ReferenceLoopHandling = ReferenceLoopHandling.Ignore, Formatting = Formatting.Indented });
+        }
+
         protected void Button1_Click(object sender, EventArgs e)
         {
             var db = new TestEntities();
             db.Database.CommandTimeout = 400;
             var val = db.Database.SqlQuery<SpValue>("EXEC [dbo].[JiraMySprintHours]"+DdlSprint.SelectedItem+ ","+"'"+DdlUser.SelectedItem+"'").FirstOrDefault();
-            Burnt.Text = val.TotalHoursBurnt.ToString();
-            Remaining.Text = val.TotalHoursRemaining.ToString();
-
+            //Burnt.Text = val.TotalHoursBurnt.ToString();
+            //Remaining.Text = val.TotalHoursRemaining.ToString();
+             
+            var val2 = db.Database.SqlQuery<SpValue>("select response from dbo.JIRA_JSON (nolock)").FirstOrDefault();
+            
+            //Response1.Text = val2.Response.ToString();
+            var issues = JObject.Parse(val2.Response)["issues"];
+            Burnt.Text = ((from i in issues select (float)i["fields"]["timespent"]).Sum()/3600).ToString();
+            Remaining.Text = ((from i in issues select (float)i["fields"]["timeestimate"]).Sum()/3600).ToString();
         }
 
-
     }
+
 }

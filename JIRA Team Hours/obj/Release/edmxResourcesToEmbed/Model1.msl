@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="TestModelStoreContainer" CdmEntityContainer="TestEntities">
+    <EntitySetMapping Name="JIRA_Team">
+      <EntityTypeMapping TypeName="TestModel.JIRA_Team">
+        <MappingFragment StoreEntitySet="JIRA_Team">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Username" ColumnName="Username" />
+          <ScalarProperty Name="DisplayName" ColumnName="DisplayName" />
+          <ScalarProperty Name="Group" ColumnName="Group" />
+          <ScalarProperty Name="ActiveSprint" ColumnName="ActiveSprint" />
+          <ScalarProperty Name="BurntHours" ColumnName="BurntHours" />
+          <ScalarProperty Name="RemainingHours" ColumnName="RemainingHours" />
+          <ScalarProperty Name="DtLastModified" ColumnName="DtLastModified" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionName="TestModel.Store.parseJSON" FunctionImportName="parseJSON">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="TestModel.parseJSON_Result">
+          <ScalarProperty Name="element_id" ColumnName="element_id" />
+          <ScalarProperty Name="sequenceNo" ColumnName="sequenceNo" />
+          <ScalarProperty Name="parent_ID" ColumnName="parent_ID" />
+          <ScalarProperty Name="Object_ID" ColumnName="Object_ID" />
+          <ScalarProperty Name="NAME" ColumnName="NAME" />
+          <ScalarProperty Name="StringValue" ColumnName="StringValue" />
+          <ScalarProperty Name="ValueType" ColumnName="ValueType" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionName="TestModel.Store.SplitString" FunctionImportName="SplitString">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="TestModel.SplitString_Result">
+          <ScalarProperty Name="val" ColumnName="val" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="BulkInsertPCProperty" FunctionName="TestModel.Store.BulkInsertPCProperty" />
+    <FunctionImportMapping FunctionImportName="EventCodesTest" FunctionName="TestModel.Store.EventCodesTest">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="TestModel.EventCodesTest_Result">
+          <ScalarProperty Name="indx" ColumnName="indx" />
+          <ScalarProperty Name="headerKey" ColumnName="headerKey" />
+          <ScalarProperty Name="value" ColumnName="value" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="EventCodesTestQA" FunctionName="TestModel.Store.EventCodesTestQA">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="TestModel.EventCodesTestQA_Result">
+          <ScalarProperty Name="indx" ColumnName="indx" />
+          <ScalarProperty Name="headerKey" ColumnName="headerKey" />
+          <ScalarProperty Name="value" ColumnName="value" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="EventCodesTestUAT" FunctionName="TestModel.Store.EventCodesTestUAT">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="TestModel.EventCodesTestUAT_Result">
+          <ScalarProperty Name="indx" ColumnName="indx" />
+          <ScalarProperty Name="headerKey" ColumnName="headerKey" />
+          <ScalarProperty Name="value" ColumnName="value" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="HttpRequest" FunctionName="TestModel.Store.HttpRequest">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="TestModel.HttpRequest_Result">
+          <ScalarProperty Name="indx" ColumnName="indx" />
+          <ScalarProperty Name="headerKey" ColumnName="headerKey" />
+          <ScalarProperty Name="value" ColumnName="value" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="JiraMySprintHours" FunctionName="TestModel.Store.JiraMySprintHours">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="TestModel.JiraMySprintHours_Result">
+          <ScalarProperty Name="indx" ColumnName="indx" />
+          <ScalarProperty Name="headerKey" ColumnName="headerKey" />
+          <ScalarProperty Name="value" ColumnName="value" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="JiraTeamSprintHours" FunctionName="TestModel.Store.JiraTeamSprintHours" />
+    <FunctionImportMapping FunctionImportName="SeleniumMethodConvert" FunctionName="TestModel.Store.SeleniumMethodConvert">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="TestModel.SeleniumMethodConvert_Result">
+          <ScalarProperty Name="RawData" ColumnName="RawData" />
+          <ScalarProperty Name="SeleniumMethod" ColumnName="SeleniumMethod" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -40,10 +40,16 @@
                 </td>
             </tr>
         </table>
-
+        <br />
        <asp:Button ID="Button1" runat="server" onclick="Button1_Click" Text="Click">
        </asp:Button>
-  
+        <br />
+        <table>
+            <asp:Label ID="Response1"
+                Text="Response:"
+                runat="server">
+            </asp:Label>
+        </table>
 
 </div>
 

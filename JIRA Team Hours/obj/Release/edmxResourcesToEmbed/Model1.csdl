@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="TestModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <ComplexType Name="parseJSON_Result">
+    <Property Name="element_id" Type="Int32" Nullable="false" />
+    <Property Name="sequenceNo" Type="Int32" />
+    <Property Name="parent_ID" Type="Int32" />
+    <Property Name="Object_ID" Type="Int32" />
+    <Property Name="NAME" Type="String" MaxLength="2000" FixedLength="false" Unicode="true" />
+    <Property Name="StringValue" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ValueType" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="SplitString_Result">
+    <Property Name="val" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+  </ComplexType>
+  <EntityType Name="JIRA_Team">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Username" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="DisplayName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Group" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ActiveSprint" Type="Int32" />
+    <Property Name="BurntHours" Type="Double" />
+    <Property Name="RemainingHours" Type="Double" />
+    <Property Name="DtLastModified" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityContainer Name="TestEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="JIRA_Team" EntityType="Self.JIRA_Team" />
+    <FunctionImport Name="parseJSON" IsComposable="true" ReturnType="Collection(TestModel.parseJSON_Result)">
+      <Parameter Name="JSON" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="SplitString" IsComposable="true" ReturnType="Collection(TestModel.SplitString_Result)">
+      <Parameter Name="s" Mode="In" Type="String" />
+      <Parameter Name="sep" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="BulkInsertPCProperty" />
+    <FunctionImport Name="EventCodesTest" ReturnType="Collection(TestModel.EventCodesTest_Result)" />
+    <FunctionImport Name="EventCodesTestQA" ReturnType="Collection(TestModel.EventCodesTestQA_Result)" />
+    <FunctionImport Name="EventCodesTestUAT" ReturnType="Collection(TestModel.EventCodesTestUAT_Result)" />
+    <FunctionImport Name="HttpRequest" ReturnType="Collection(TestModel.HttpRequest_Result)">
+      <Parameter Name="url" Mode="In" Type="String" />
+      <Parameter Name="headers" Mode="In" Type="String" />
+      <Parameter Name="response" Mode="InOut" Type="String" />
+      <Parameter Name="responseHeaders" Mode="InOut" Type="String" />
+      <Parameter Name="errorResponse" Mode="InOut" Type="String" />
+      <Parameter Name="cookie" Mode="InOut" Type="String" />
+      <Parameter Name="connectTimeout" Mode="In" Type="Int32" />
+      <Parameter Name="outputResponse" Mode="In" Type="Boolean" />
+      <Parameter Name="httpMethod" Mode="In" Type="String" />
+      <Parameter Name="requestBody" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="JiraMySprintHours" ReturnType="Collection(TestModel.JiraMySprintHours_Result)">
+      <Parameter Name="sprint" Mode="In" Type="Int32" />
+      <Parameter Name="user" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="JiraTeamSprintHours" ReturnType="Collection(String)" />
+    <FunctionImport Name="SeleniumMethodConvert" ReturnType="Collection(TestModel.SeleniumMethodConvert_Result)" />
+  </EntityContainer>
+  <ComplexType Name="EventCodesTest_Result">
+    <Property Type="Int32" Name="indx" Nullable="false" />
+    <Property Type="String" Name="headerKey" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="value" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="EventCodesTestQA_Result">
+    <Property Type="Int32" Name="indx" Nullable="false" />
+    <Property Type="String" Name="headerKey" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="value" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="EventCodesTestUAT_Result">
+    <Property Type="Int32" Name="indx" Nullable="false" />
+    <Property Type="String" Name="headerKey" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="value" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="HttpRequest_Result">
+    <Property Type="Int32" Name="indx" Nullable="false" />
+    <Property Type="String" Name="headerKey" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="value" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="JiraMySprintHours_Result">
+    <Property Type="Int32" Name="indx" Nullable="false" />
+    <Property Type="String" Name="headerKey" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="value" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="SeleniumMethodConvert_Result">
+    <Property Type="String" Name="RawData" Nullable="true" />
+    <Property Type="String" Name="SeleniumMethod" Nullable="true" />
+  </ComplexType>
+</Schema>
