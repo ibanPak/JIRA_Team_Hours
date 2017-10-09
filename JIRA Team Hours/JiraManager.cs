@@ -41,8 +41,8 @@ namespace JIRA_Team_Hours
     public class JiraManager
     {
         private const string m_BaseUrl = "https://resnet.atlassian.net/rest/api/2/latest";
-        private string m_Username = "Ivan.Nguyen-Cuu@usres.com";
-        private string m_Password = "Halmuni143";
+        private string m_Username = "";
+        private string m_Password = "";
 
         public JiraManager(string username, string password)
         {
@@ -104,8 +104,6 @@ namespace JIRA_Team_Hours
 
             return JsonConvert.DeserializeObject<List<ProjectDescription>>(projectsString);
         }
-
-
 
         private string GetEncodedCredentials()
         {
